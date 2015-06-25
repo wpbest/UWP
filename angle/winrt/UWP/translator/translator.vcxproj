@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\compiler\translator\ArrayReturnValueToOutParameter.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\ASTMetadataHLSL.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\blocklayout.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\blocklayoutHLSL.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\BuiltInFunctionEmulator.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\BuiltInFunctionEmulatorGLSL.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\BuiltInFunctionEmulatorHLSL.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\CallDAG.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\CodeGen.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\Compiler.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\depgraph\DependencyGraph.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\depgraph\DependencyGraphBuilder.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\depgraph\DependencyGraphOutput.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\depgraph\DependencyGraphTraverse.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\Diagnostics.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\DirectiveHandler.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\EmulatePrecision.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\FlagStd140Structs.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\ForLoopUnroll.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\glslang_lex.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\glslang_tab.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\InfoSink.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\Initialize.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\InitializeDll.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\InitializeParseContext.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\InitializeVariables.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\Intermediate.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\IntermNode.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\intermOut.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\IntermTraverse.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\LoopInfo.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\Operator.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\OutputESSL.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\OutputGLSL.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\OutputGLSLBase.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\OutputHLSL.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\parseConst.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\ParseContext.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\PoolAlloc.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\PruneEmptyDeclarations.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\QualifierAlive.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\RegenerateStructNames.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\RemoveSwitchFallThrough.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\RewriteElseBlocks.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\ScalarizeVecAndMatConstructorArgs.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\SearchSymbol.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\SeparateArrayInitialization.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\SeparateDeclarations.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\ShaderLang.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\ShaderVars.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\SimplifyArrayAssignment.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\StructureHLSL.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\SymbolTable.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\timing\RestrictFragmentShaderTiming.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\timing\RestrictVertexShaderTiming.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\TranslatorESSL.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\TranslatorGLSL.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\TranslatorHLSL.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\Types.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\UnfoldShortCircuitAST.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\UnfoldShortCircuitToIf.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\UniformHLSL.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\util.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\UtilsHLSL.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\ValidateGlobalInitializer.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\ValidateLimitations.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\ValidateOutputs.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\ValidateSwitch.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\VariableInfo.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\VariablePacker.cpp" />
+    <ClCompile Include="..\..\..\src\compiler\translator\VersionGLSL.cpp" />
+    <ClCompile Include="..\..\..\src\third_party\compiler\ArrayBoundsClamper.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{f8146843-907f-45e7-9b16-c6489f45b5c8}</ProjectGuid>
+    <Keyword>StaticLibrary</Keyword>
+    <ProjectName>translator</ProjectName>
+    <RootNamespace>translator_lib</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <ApplicationTypeRevision>8.2</ApplicationTypeRevision>
+    <TargetPlatformVersion>10.0.10069.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10069.0</TargetPlatformMinVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+    <IntDir>$(OutDir)obj\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)output\$(PlatformToolset)\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+    <IntDir>$(OutDir)obj\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)output\$(PlatformToolset)\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <GenerateManifest>false</GenerateManifest>
+    <IntDir>$(OutDir)obj\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)output\$(PlatformToolset)\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <GenerateManifest>false</GenerateManifest>
+    <IntDir>$(OutDir)obj\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)output\$(PlatformToolset)\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <GenerateManifest>false</GenerateManifest>
+    <IntDir>$(OutDir)obj\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)output\$(PlatformToolset)\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <GenerateManifest>false</GenerateManifest>
+    <IntDir>$(OutDir)obj\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)output\$(PlatformToolset)\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\..\src;..\..\..\include;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_HAS_EXCEPTIONS=0;NOMINMAX;ANGLE_TRANSLATOR_STATIC;ANGLE_ENABLE_HLSL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\..\src;..\..\..\include;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_HAS_EXCEPTIONS=0;NOMINMAX;ANGLE_TRANSLATOR_STATIC;ANGLE_ENABLE_HLSL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\..\src;..\..\..\include;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_HAS_EXCEPTIONS=0;NOMINMAX;ANGLE_TRANSLATOR_STATIC;ANGLE_ENABLE_HLSL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|arm'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\..\src;..\..\..\include;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_HAS_EXCEPTIONS=0;NOMINMAX;ANGLE_TRANSLATOR_STATIC;ANGLE_ENABLE_HLSL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\..\src;..\..\..\include;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_HAS_EXCEPTIONS=0;NOMINMAX;ANGLE_TRANSLATOR_STATIC;ANGLE_ENABLE_HLSL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\..\src;..\..\..\include;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_HAS_EXCEPTIONS=0;NOMINMAX;ANGLE_TRANSLATOR_STATIC;ANGLE_ENABLE_HLSL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
