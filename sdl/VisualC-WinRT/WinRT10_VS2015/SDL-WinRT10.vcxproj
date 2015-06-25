@@ -359,6 +359,14 @@
       <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</CompileAsWinRT>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\angle\winrt\UWP\libEGL\libEGL.vcxproj">
+      <Project>{8aba6c60-4122-47e3-b010-079c3226ec76}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\angle\winrt\UWP\libGLESv2\libGLESv2.vcxproj">
+      <Project>{7835a047-5f8e-4c4b-b5be-5afc59c99850}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{89e9b32e-a86a-47c3-a948-d2b1622925ce}</ProjectGuid>
     <Keyword>DynamicLibrary</Keyword>

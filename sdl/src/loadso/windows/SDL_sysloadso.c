@@ -32,6 +32,12 @@
 void *
 SDL_LoadObject(const char *sofile)
 {
+	//size_t newsize = strlen(sofile) + 1;
+	//wchar_t * tstr = SDL_malloc(newsize);
+
+	// Convert char* string to a wchar_t* string.
+	//size_t convertedChars = 0;
+	//mbstowcs_s(&convertedChars, tstr, newsize, sofile, _TRUNCATE);
     LPTSTR tstr = WIN_UTF8ToString(sofile);
 #ifdef __WINRT__
     /* WinRT only publically supports LoadPackagedLibrary() for loading .dll

@@ -182,6 +182,9 @@
     <Image Include="Assets\WideLogo.scale-100.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\angle\winrt\UWP\libEGL\libEGL.vcxproj">
+      <Project>{8aba6c60-4122-47e3-b010-079c3226ec76}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\angle\winrt\UWP\libGLESv2\libGLESv2.vcxproj">
       <Project>{7835a047-5f8e-4c4b-b5be-5afc59c99850}</Project>
     </ProjectReference>
